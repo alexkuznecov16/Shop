@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="products main-content">
+  <div class="container">
+    <h2 class="section-title">Наши товары</h2>
+    <div class="products__inner">
+      {% for product in products %}
+          <div title="{{ product.name }}" class="product-item">
+              <h3>{{ product.name|truncatechars:30 }}</h3>
+              <a href="{% url 'product_detail' product.id %}">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% else %}
+                    <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
+                {% endif %}
+              </a>
+              <p>{{ product.description|truncatechars:100 }}</p>
+              <p><strong>Цена:</strong> {{ product.price }} евро</p>
+              <p><strong>Доступность:</strong> {{ product.available|yesno:"Доступен,Недоступен" }}</p>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

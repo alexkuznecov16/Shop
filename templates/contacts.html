@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+<div class="contacts main-content">
+  <div class="container">
+    <h2 class="section-title">Как с нами связаться</h2>
+    <div class="contacts__inner">
+        <p>Если у вас есть вопросы, не стесняйтесь обращаться к нам через следующие платформы:</p>
+
+        <ul class="social-links">
+            <li>
+                <a href="https://www.youtube.com/channel/your_channel_id" target="_blank" class="social-link youtube">
+                    YouTube
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/your_telegram_username" target="_blank" class="social-link telegram">
+                    Telegram
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/your_whatsapp_number" target="_blank" class="social-link whatsapp">
+                    WhatsApp
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="location-info">
+        <h2>О нас</h2>
+        <p>Мы находимся в живописном городе Юрмала, известном своими прекрасными пляжами и курортной атмосферой.</p>
+        <p><strong>Адрес:</strong> Юрмала, Латвия</p>
+        <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+        <p><strong>Телефон:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <img src={% static 'images/jurmala.jpg' %} alt="Юрмала" class="location-image">
+    </div>
+  </div>  
+</div>
+{% endblock %}
