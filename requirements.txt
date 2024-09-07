@@ -1,0 +1,16 @@
+asgiref==3.8.1
+certifi==2024.8.30
+charset-normalizer==3.3.2
+Django==5.1.1
+django-appconf==1.0.6
+idna==3.8
+libsass==0.23.0
+Pillow==10.4.0
+pip==24.2
+rcssmin==1.1.2
+requests==2.32.3
+rjsmin==1.2.2
+setuptools==65.5.0
+sqlparse==0.5.1
+tzdata==2024.1
+urllib3==2.2.2
