@@ -10,17 +10,17 @@
 
         <ul class="social-links">
             <li>
-                <a href="https://www.youtube.com/channel/your_channel_id" target="_blank" class="social-link youtube">
+                <a href="{{ company_info.youtube_link }}" target="_blank" class="social-link youtube">
                     YouTube
                 </a>
             </li>
             <li>
-                <a href="https://t.me/your_telegram_username" target="_blank" class="social-link telegram">
+                <a href="{{ company_info.telegram_link }}" target="_blank" class="social-link telegram">
                     Telegram
                 </a>
             </li>
             <li>
-                <a href="https://wa.me/your_whatsapp_number" target="_blank" class="social-link whatsapp">
+                <a href="{{ company_info.whatsapp_link }}" target="_blank" class="social-link whatsapp">
                     WhatsApp
                 </a>
             </li>
@@ -29,11 +29,13 @@
 
     <div class="location-info">
         <h2>О нас</h2>
-        <p>Мы находимся в живописном городе Юрмала, известном своими прекрасными пляжами и курортной атмосферой.</p>
-        <p><strong>Адрес:</strong> Юрмала, Латвия</p>
-        <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
-        <p><strong>Телефон:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-        <img src={% static 'images/jurmala.jpg' %} alt="Юрмала" class="location-image">
+        <p>{{ company_info.about }}</p>
+        <p><strong>Адрес:</strong> {{ company_info.address }}</p>
+        <p><strong>Email:</strong> <a href="mailto:{{ company_info.email }}">{{ company_info.email }}</a></p>
+        <p><strong>Телефон:</strong> <a href="tel:{{ company_info.phone_number }}">{{ company_info.phone_number }}</a></p>
+        <div class="img__container">
+            <img src="{{ company_info.location_image.url }}" alt="Юрмала" class="location-image">
+        </div>
     </div>
   </div>  
 </div>

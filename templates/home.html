@@ -2,13 +2,36 @@
 {% load static %}
 
 {% block content %}
-<main class="intro main-content" style="background-image: url('{% static 'images/intro.jpg' %}');">
+<main class="intro main-content" style="background-image: url('{{ company_info.intro_img.url }}');">
   <div class="container">
     <div class="intro__inner">
       <h3>Добро пожаловать!</h3>
       <p>На нашем сайте вы можете ознакомиться с продукцией, которую мы продаем.</p>
-      <a href="https://t.me/s/veroonikas_life">Заказать звонок</a>
+      <a href="{{ company_info.telegram_link }}" target="_blank">Заказать звонок</a>
     </div>
   </div>
 </main>
+<div class="products main-content">
+  <div class="container">
+    <h2 class="section-title">Наши товары</h2>
+    <div class="products__inner">
+      {% for product in products|slice:":6" %}
+          <div title="{{ product.name }}" class="product-item">
+              <h3>{{ product.name|truncatechars:30 }}</h3>
+              <a href="products/{% url 'product_detail' product.id %}">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% else %}
+                    <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
+                {% endif %}
+              </a>
+              <p>{{ product.description|truncatechars:100 }}</p>
+              <p><strong>Цена:</strong> {{ product.price }} евро</p>
+              <p><strong>Доступность:</strong> {{ product.available|yesno:"Доступен,Недоступен" }}</p>
+          </div>
+      {% endfor %}
+    </div>
+    <a class="more-btn" href="products/">Больше товаров</a>
+  </div>
+</div>
 {% endblock %}

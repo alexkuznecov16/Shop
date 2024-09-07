@@ -1,28 +1,28 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <h1 class="header-logo">Company</h1>
+      <h1 class="header-logo">{{ company_info.name }}</h1>
       <nav class="header-menu">
-        <a href="/">Home</a>
-        <a href="/products/">Products</a>
-        <a href="/contacts/">Contacts</a>
+        <a href="/">Главная</a>
+        <a href="/products/">Товары</a>
+        <a href="/contacts/">Контакты</a>
       </nav>
       <div class="header-info">
-        <a href="tel:+37122222222"><i class="bi bi-telephone"></i>+37122222222</a>
-        <a href="mailto:example@gmail.com"><i class="bi bi-envelope"></i>example@gmail.com</a>
+        <a href="tel:{{ company_info.phone_number }}"><i class="bi bi-telephone"></i>{{ company_info.phone_number }}</a>
+        <a href="mailto:{{ company_info.email }}"><i class="bi bi-envelope"></i>{{ company_info.email }}</a>
       </div>
       <i onclick="openMenu()" class="bi bi-list mobileMenuOpener"></i>
       <div class="mobile">
         <i onclick="closeMenu()" class="bi bi-x-lg close"></i>
-        <h3>Company name</h3>
+        <h3>{{ company_info.name }}</h3>
         <nav class="header-menu">
-          <a href="/">Home</a>
-          <a href="/products/">Products</a>
-          <a href="/contacts/">Contacts</a>
+          <a href="/">Главная</a>
+          <a href="/products/">Товары</a>
+          <a href="/contacts/">Контакты</a>
         </nav>
         <div class="header-info">
-          <a href="tel:+37122222222"><i class="bi bi-telephone"></i>+37122222222</a>
-          <a href="mailto:example@gmail.com"><i class="bi bi-envelope"></i>example@gmail.com</a>
+          <a href="tel:{{ company_info.phone_number }}"><i class="bi bi-telephone"></i>{{ company_info.phone_number }}</a>
+          <a href="mailto:{{ company_info.email }}"><i class="bi bi-envelope"></i>{{ company_info.email }}</a>
         </div>
       </div>
     </div>

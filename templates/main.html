@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Company</title>
-
-  <!-- Используйте compress для сжатия и компиляции SCSS -->
   <link rel="stylesheet" href="{% static 'styles/main.css' %}">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/star.ico' %}"/>
 </head>
 <body>
+
   {% include 'header.html' %}
 
   {% block content %}
