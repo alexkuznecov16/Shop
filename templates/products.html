@@ -1,11 +1,12 @@
 {% extends "main.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 
 <div class="products main-content">
   <div class="container">
-    <h2 class="section-title">Наши товары</h2>
+    <h2 class="section-title">{% trans "Наши товары" %}</h2>
     <div class="products__inner">
       {% for product in products %}
           <div title="{{ product.name }}" class="product-item">
@@ -18,8 +19,8 @@
                 {% endif %}
               </a>
               <p>{{ product.description|truncatechars:100 }}</p>
-              <p><strong>Цена:</strong> {{ product.price }} евро</p>
-              <p><strong>Доступность:</strong> {{ product.available|yesno:"Доступен,Недоступен" }}</p>
+              <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} {% trans "евро" %}</p>
+              <p><strong>{% trans "Доступность:" %}</strong> {{ product.available|yesno:"yes,no" }}</p>
           </div>
       {% endfor %}
     </div>

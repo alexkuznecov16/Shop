@@ -1,40 +1,41 @@
 {% extends "main.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 <div class="contacts main-content">
   <div class="container">
-    <h2 class="section-title">Как с нами связаться</h2>
+    <h2 class="section-title">{% trans "Как с нами связаться" %}</h2>
     <div class="contacts__inner">
-        <p>Если у вас есть вопросы, не стесняйтесь обращаться к нам через следующие платформы:</p>
+        <p>{% trans "Если у вас есть вопросы, не стесняйтесь обращаться к нам через следующие платформы:" %}</p>
 
         <ul class="social-links">
             <li>
                 <a href="{{ company_info.youtube_link }}" target="_blank" class="social-link youtube">
-                    YouTube
+                    {% trans "YouTube" %}
                 </a>
             </li>
             <li>
                 <a href="{{ company_info.telegram_link }}" target="_blank" class="social-link telegram">
-                    Telegram
+                    {% trans "Telegram" %}
                 </a>
             </li>
             <li>
                 <a href="{{ company_info.whatsapp_link }}" target="_blank" class="social-link whatsapp">
-                    WhatsApp
+                    {% trans "WhatsApp" %}
                 </a>
             </li>
         </ul>
     </div>
 
     <div class="location-info">
-        <h2>О нас</h2>
+        <h2>{% trans "О нас" %}</h2>
         <p>{{ company_info.about }}</p>
-        <p><strong>Адрес:</strong> {{ company_info.address }}</p>
-        <p><strong>Email:</strong> <a href="mailto:{{ company_info.email }}">{{ company_info.email }}</a></p>
-        <p><strong>Телефон:</strong> <a href="tel:{{ company_info.phone_number }}">{{ company_info.phone_number }}</a></p>
+        <p><strong>{% trans "Адрес:" %}</strong> {{ company_info.address }}</p>
+        <p><strong>{% trans "Email:" %}</strong> <a href="mailto:{{ company_info.email }}">{{ company_info.email }}</a></p>
+        <p><strong>{% trans "Телефон:" %}</strong> <a href="tel:{{ company_info.phone_number }}">{{ company_info.phone_number }}</a></p>
         <div class="img__container">
-            <img src="{{ company_info.location_image.url }}" alt="Юрмала" class="location-image">
+            <img src="{{ company_info.location_image.url }}" alt="{% trans 'Юрмала' %}" class="location-image">
         </div>
     </div>
   </div>  
