@@ -505,6 +505,14 @@ a {
   .header__inner .header-menu, .header__inner  .header-info {
     display: none;
   }
+
+  .header__inner .language-switcher {
+    display: none;
+  }
+
+  .mobile .language-switcher {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 800px) {
