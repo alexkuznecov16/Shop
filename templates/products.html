@@ -9,22 +9,50 @@
     <h2 class="section-title">{% trans "Наши товары" %}</h2>
     <div class="products__inner">
       {% for product in products %}
-          <div title="{{ product.name }}" class="product-item">
+          <div title="{{ product.name }}" class="product-item" onclick="openModal({{ product.id }})">
               <h3>{{ product.name|truncatechars:30 }}</h3>
-              <a href="{% url 'product_detail' product.id %}">
-                {% if product.image %}
-                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
-                {% else %}
-                    <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
-                {% endif %}
-              </a>
+              {% if product.image %}
+                  <img src="{{ product.image.url }}" alt="{{ product.name }}">
+              {% else %}
+                  <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
+              {% endif %}
               <p>{{ product.description|truncatechars:100 }}</p>
               <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} {% trans "евро" %}</p>
-              <p><strong>{% trans "Доступность:" %}</strong> {{ product.available|yesno:"yes,no" }}</p>
+          </div>
+          <div id="modal-{{ product.id }}" class="product-modal" style="display: none;">
+            <div class="container">
+              <div class="product-modal__content">
+                <i class="bi bi-x-lg close" onclick="closeModal({{ product.id }})"></i>
+                  {% if product.image %}
+                      <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                  {% else %}
+                      <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
+                  {% endif %}
+                  <div class="modal__info">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.description }}</p>
+                    <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} {% trans "евро" %}</p>
+                  </div>
+              </div>
+            </div>
           </div>
       {% endfor %}
     </div>
   </div>
 </div>
+
+  <script>
+  function openModal(productId) {
+    let modal = document.getElementById('modal-' + productId);
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(productId) {
+    let modal = document.getElementById('modal-' + productId);
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  </script>
 
 {% endblock %}

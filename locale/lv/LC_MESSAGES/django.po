@@ -58,14 +58,18 @@ msgid "Адрес:"
 msgstr "Adrese:"
 
 #: .\templates\contacts.html:35
+msgid "Латвия, город Юрмала, район Каугури"
+msgstr "Latvija, Jūrmalas pilsēta, Kauguru rajons"
+
+#: .\templates\contacts.html:37
 msgid "Email:"
 msgstr "E-pasts:"
 
-#: .\templates\contacts.html:36
+#: .\templates\contacts.html:38
 msgid "Телефон:"
 msgstr "Tālrunis:"
 
-#: .\templates\contacts.html:38
+#: .\templates\contacts.html:40
 msgid "Юрмала"
 msgstr "Jūrmala"
 
@@ -128,3 +132,219 @@ msgstr "Cena:"
 #: .\templates\products.html:23
 msgid "Доступность:"
 msgstr "Pieejamība:"
+
+#: .\templates\contacts.html:33
+msgid "Мы специализируемся на продаже и перепродаже товаров по сниженным ценам, предлагая широкий ассортимент продукции по доступной стоимости. Наша миссия — сделать качественные товары доступными для всех, экономя ваше время и деньги. Благодаря прямым поставкам и выгодным условиям сотрудничества с нашими партнерами, мы обеспечиваем лучшие предложения на рынке. С нами вы можете купить нужные товары по выгодной цене, не переплачивая за бренд или посредников."
+msgstr "Mēs specializējamies preču pārdošanā un tālākpārdošanā par pazeminātām cenām, piedāvājot plašu produktu klāstu par pieņemamām cenām. Mūsu misija ir padarīt kvalitatīvas preces pieejamas ikvienam, ietaupot jūsu laiku un naudu. Pateicoties tiešajiem piegādēm un izdevīgiem sadarbības nosacījumiem ar mūsu partneriem, mēs nodrošinām labākos piedāvājumus tirgū. Pie mums jūs varat iegādāties nepieciešamās preces par izdevīgu cenu, nepārmaksājot par zīmolu vai starpniekiem."
+
+#: .\templates\products.html
+msgid "Беспроводная клавиатура ENG с беспроводной мышкой в комплекте"
+msgstr "Bezvadu tastatūra ENG ar bezvadu peli komplektā"
+
+#: .\templates\products.html
+msgid "Складной нож для грибников в чехле"
+msgstr "Saliekamais nazis sēņu lasītājiem ar maksti"
+
+#: .\templates\products.html
+msgid "Смеситель для кухни FAUCET"
+msgstr "Virtuves jaucējkrāns FAUCET"
+
+#: .\templates\products.html
+msgid "Детский стол с конструктором"
+msgstr "Bērnu galds ar konstruktoru"
+
+#: .\templates\products.html
+msgid "Домашний беспроводной телефон"
+msgstr "Mājas bezvadu tālrunis"
+
+#: .\templates\products.html
+msgid "Палатка 3-х местная"
+msgstr "3 personu telts"
+
+#: .\templates\products.html
+msgid "Беспроводная мини-полировальная машина"
+msgstr "Bezvadu mini pulēšanas mašīna"
+
+#: .\templates\products.html
+msgid "Провод для зарядки iPhone"
+msgstr "iPhone uzlādes kabelis"
+
+#: .\templates\products.html
+msgid "Чистящее средство для фритюра"
+msgstr "Fritēžu tīrītājs"
+
+#: .\templates\products.html
+msgid "Повязка на голову с наушниками для сна или для занятий спортом"
+msgstr "Galvas lente ar austiņām miegam vai sporta aktivitātēm"
+
+#: .\templates\products.html
+msgid "Проводная игровая клавиатура Cooler Master SK620 с RGB-подсветкой каждой кнопки, QWERTZ, клавиатура DE"
+msgstr "Cooler Master SK620 vadu spēļu tastatūra ar RGB apgaismojumu katram taustiņam, QWERTZ, DE tastatūra"
+
+#: .\templates\products.html
+msgid "Металлический диск для тримера"
+msgstr "Metāla disks trimmerim"
+
+#: .\templates\products.html
+msgid "Лампа для кемпера"
+msgstr "Kempera lampa"
+
+#: .\templates\products.html
+msgid "Верхний чехол для детских колясок"
+msgstr "Bērnu ratiņu augšējais pārvalks"
+
+#: .\templates\products.html
+msgid "Провод для принтера"
+msgstr "Printera kabelis"
+
+#: .\templates\products.html
+msgid "Крепление на стену для телевизора S100 Slim"
+msgstr "Sienas stiprinājums televizoram S100 Slim"
+
+#: .\templates\products.html
+msgid "Инструмент для удаления сердцевины фруктов Комплект 4 шт."
+msgstr "Augļu serdes izņemšanas rīku komplekts 4 gab."
+
+#: .\templates\products.html
+msgid "Воздушные шары заполняемые водой"
+msgstr "Ar ūdeni pildīti baloni"
+
+#: .\templates\products.html
+msgid "Настенный светильник со светодиодной лампой"
+msgstr "Sienas lampa ar LED lampu"
+
+#: .\templates\products.html
+msgid "Комплект промышленных газовых баллонов с горелкой"
+msgstr "Rūpnieciskās gāzes balonu komplekts ar degli"
+
+#: .\templates\products.html
+msgid "Профессиональный тюнер-прищепка"
+msgstr "Profesionāls piespraužams skaņotājs"
+
+#: .\templates\products.html
+msgid "Настольная сенсорная LED лампа"
+msgstr "Galda pieskārienu LED lampa"
+
+#: .\templates\products.html
+msgid "Кружка из нержавеющей стали с двойными стенками для кемпинга"
+msgstr "Nerūsējošā tērauda krūze ar dubultām sieniņām kempingam"
+
+#: .\templates\products.html
+msgid "Толстовка с капюшоном унисекс размер L"
+msgstr "Džemperis ar kapuci uniseksa izmērs L"
+
+#: .\templates\products.html
+msgid "Водонепроницаемый триммер для интимной зоны и тела"
+msgstr "Ūdensizturīgs intīmā un ķermeņa trimmeris"
+
+#: .\templates\products.html
+msgid "Керамический водопад для ароматерапии"
+msgstr "Keramiskais ūdenskritums aromterapijai"
+
+#: .\templates\products.html
+msgid "Декоративная пластиковая тыква"
+msgstr "Dekoratīvs plastmasas ķirbis"
+
+#: .\templates\products.html
+msgid "Фитнес стропы с затяжным механизмом Комплект"
+msgstr "Fitnesa siksnas ar pievilkšanas mehānismu Komplekts"
+
+#: .\templates\products.html
+msgid "Сумка с кошельком для коляски"
+msgstr "Soma ar bērnu ratiņu somiņu"
+
+#: .\templates\products.html
+msgid "Аэрогриль 8 литров"
+msgstr "Aerogrill 8 litri"
+
+#: .\templates\products.html
+msgid "Органайзер для столовых приборов"
+msgstr "Galda piederumu organizators"
+
+#: .\templates\products.html
+msgid "Металлическая канистра 10 литров"
+msgstr "Metāla kanna 10 litri"
+
+#: .\templates\products.html
+msgid "Мини-настольная циркулярная пила"
+msgstr "Mini galda ripzāģis"
+
+#: .\templates\products.html
+msgid "Утяжеленное одеяло"
+msgstr "Svara sega"
+
+#: .\templates\products.html
+msgid "Скалка из нержавеющей стали"
+msgstr "Nerūsējošā tērauda rullītis"
+
+#: .\templates\products.html
+msgid "Биоразлагаемые пакеты для собачек, 36 рулонов, с дозатором"
+msgstr "Bioloģiski noārdāmie suņu maisiņi, 36 ruļļi, ar dozatoru"
+
+#: .\templates\products.html
+msgid "Адаптер XLR"
+msgstr "XLR adapteris"
+
+#: .\templates\products.html
+msgid "Детский игровой стол с конструктором"
+msgstr "Bērnu spēļu galds ar konstruktoru"
+
+#: .\templates\products.html
+msgid "Пляжная палатка на 2 персоны"
+msgstr "Pludmales telts 2 personām"
+
+#: .\templates\products.html
+msgid "Выдвижной мусорный бак под столешницей"
+msgstr "Izvelkama atkritumu tvertne zem darba virsmas"
+
+#: .\templates\products.html
+msgid "Обруч Хула-Хуп"
+msgstr "Hula hoop"
+
+#: .\templates\products.html
+msgid "Факел"
+msgstr "Deglis"
+
+#: .\templates\products.html
+msgid "Двойной электрический молокоотсосник"
+msgstr "Dubultais elektriskais krūts sūknis"
+
+#: .\templates\products.html
+msgid "Детская коляска Magic Fold Plus Green"
+msgstr "Bērnu ratiņi Magic Fold Plus Green"
+
+#: .\templates\products.html
+msgid "Муфта для ног для детской коляски"
+msgstr "Mufa kājām bērnu ratiņiem"
+
+#: .\templates\products.html
+msgid "Аксессуар для розжига мангала"
+msgstr "Grila aizdedzes piederums"
+
+#: .\templates\products.html
+msgid "Пелёнки для дрессировки собак 55.8см х 55.8см"
+msgstr "Suņu apmācības autiņi 55.8cm x 55.8cm"
+
+#: .\templates\products.html
+msgid "Крепление на стену для телевизора от 50'"
+msgstr "Sienas stiprinājums TV no 50'"
+
+#: .\templates\products.html
+msgid "Неоновая светодиодная лента 15м"
+msgstr "Neona LED lente 15 m"
+
+#: .\templates\products.html
+msgid "Металлический контейнер для мусора со съёмным ведром"
+msgstr "Metāla atkritumu tvertne ar noņemamu spaini"
+
+#: .\templates\products.html
+msgid "Голливудское зеркало для макияжа"
+msgstr "Holivudas kosmētikas spogulis"
+
+#: .\templates\products.html
+msgid "Набор посуды на 16 предметов"
+msgstr "16 detaļu trauku komplekts"
+
+#: .\templates\products.html
+msgid "Роботизированная автоматическая газонокосилка с GPS навигацией"
+msgstr "Robotizēts automātiskais zāles pļāvējs ar GPS navigāciju"

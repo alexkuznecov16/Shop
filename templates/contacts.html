@@ -30,8 +30,10 @@
 
     <div class="location-info">
         <h2>{% trans "О нас" %}</h2>
-        <p>{{ company_info.about }}</p>
-        <p><strong>{% trans "Адрес:" %}</strong> {{ company_info.address }}</p>
+        <p>{% trans company_info.about %}</p>
+        <p><strong>{% trans "Адрес:" %}</strong>
+            <span>Jurmala, Latvija</span>
+        </p>
         <p><strong>{% trans "Email:" %}</strong> <a href="mailto:{{ company_info.email }}">{{ company_info.email }}</a></p>
         <p><strong>{% trans "Телефон:" %}</strong> <a href="tel:{{ company_info.phone_number }}">{{ company_info.phone_number }}</a></p>
         <div class="img__container">
