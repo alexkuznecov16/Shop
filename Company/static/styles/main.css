@@ -350,7 +350,13 @@ a {
 }
 
 .product-modal__content img {
-  width: 60%;
+  width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-modal__content img {
+    width: 20%;
+  }
 }
 
 .modal__info {
