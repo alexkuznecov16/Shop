@@ -53,6 +53,23 @@
     modal.classList.add('closed');
     document.body.style.overflow = '';
   }
+
+  window.onload = function() {
+    var items = document.querySelectorAll('.product-item');
+    var maxHeight = 0;
+
+    items.forEach(function(item) {
+      var itemHeight = item.offsetHeight;
+      if (itemHeight > maxHeight) {
+        maxHeight = itemHeight;
+      }
+    });
+
+    items.forEach(function(item) {
+      item.style.height = maxHeight + 'px';
+    });
+  };
+  
   </script>
 
 {% endblock %}

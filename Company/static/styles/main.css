@@ -284,6 +284,9 @@ a {
   transition: box-shadow 0.3s ease;
   background-color: #fff;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-item:hover {
