@@ -336,10 +336,11 @@ a {
 .product-modal__content {
   position: relative;
   width: 90%;
+  height: 500px;
   display: flex;
   justify-content: center;
   gap: 50px;
-  align-items: flex-start;
+  align-items: center;
   background-color: #fff;
   padding: 12px 24px;
   -webkit-border-radius: 4px;
@@ -354,6 +355,10 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
+  .product-modal__content {
+    max-height: 450px;
+    height: 100% !important;
+  }
   .product-modal__content img {
     width: 20%;
   }
@@ -362,6 +367,7 @@ a {
 .modal__info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .modal__info h3 {
