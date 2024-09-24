@@ -281,12 +281,16 @@ a {
   padding: 15px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
   background-color: #fff;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .product-item:hover {
@@ -355,6 +359,7 @@ a {
 
 .product-modal__content img {
   width: 40%;
+  height: 80%;
 }
 
 .modal__info {
