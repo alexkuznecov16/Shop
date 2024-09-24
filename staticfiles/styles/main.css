@@ -354,16 +354,6 @@ a {
   width: 40%;
 }
 
-@media screen and (max-width: 1200px) {
-  .product-modal__content {
-    max-height: 450px;
-    height: 100% !important;
-  }
-  .product-modal__content img {
-    width: 20%;
-  }
-}
-
 .modal__info {
   display: flex;
   flex-direction: column;
@@ -540,6 +530,12 @@ a {
 
 /*! CONTACTS BLOCK END */
 
+@media screen and (max-width: 1200px) {
+  .product-modal__content {
+    max-height: 450px;
+    height: 100% !important;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .mobileMenuOpener {
@@ -562,10 +558,6 @@ a {
 
   .product-modal__content {
     flex-direction: column;
-  }
-
-  .product-modal__content img {
-    width: 100%;
   }
 }
 
