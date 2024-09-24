@@ -42,17 +42,34 @@
 </div>
 
   <script>
-  function openModal(productId) {
-    let modal = document.getElementById('modal-' + productId);
+function openModal(productId) {
+  let modal = document.getElementById('modal-' + productId);
+
+  if (modal) {
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
-  }
 
-  function closeModal(productId) {
-    let modal = document.getElementById('modal-' + productId);
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        closeModal(productId);
+      }
+    });
+  } else {
+    console.error("Модальное окно с id 'modal-" + productId + "' не найдено.");
+  }
+}
+
+function closeModal(productId) {
+  let modal = document.getElementById('modal-' + productId);
+
+  if (modal) {
     modal.style.display = 'none';
     document.body.style.overflow = '';
+  } else {
+    console.error("Модальное окно с id 'modal-" + productId + "' не найдено.");
   }
+}
+
   </script>
 
 {% endblock %}
