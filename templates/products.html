@@ -19,7 +19,7 @@
               <p>{{ product.description|truncatechars:100 }}</p>
               <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} {% trans "евро" %}</p>
           </div>
-          <div id="modal-{{ product.id }}" class="product-modal">
+          <div id="modal-{{ product.id }}" class="product-modal closed">
             <div class="container">
               <div class="product-modal__content">
                 <i class="bi bi-x-lg close" onclick="closeModal({{ product.id }})"></i>
@@ -42,34 +42,17 @@
 </div>
 
   <script>
-function openModal(productId) {
-  let modal = document.getElementById('modal-' + productId);
-
-  if (modal) {
-    modal.style.display = 'flex';
+  function openModal(productId) {
+    let modal = document.getElementById('modal-' + productId);
+    modal.classList.remove('closed');
     document.body.style.overflow = 'hidden';
-
-    modal.addEventListener('click', function (e) {
-      if (e.target === modal) {
-        closeModal(productId);
-      }
-    });
-  } else {
-    console.error("Модальное окно с id 'modal-" + productId + "' не найдено.");
   }
-}
 
-function closeModal(productId) {
-  let modal = document.getElementById('modal-' + productId);
-
-  if (modal) {
-    modal.style.display = 'none';
+  function closeModal(productId) {
+    let modal = document.getElementById('modal-' + productId);
+    modal.classList.add('closed');
     document.body.style.overflow = '';
-  } else {
-    console.error("Модальное окно с id 'modal-" + productId + "' не найдено.");
   }
-}
-
   </script>
 
 {% endblock %}
