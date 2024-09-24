@@ -29,6 +29,12 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'veronikas.shop', 'www.veronikas.shop']
 
+# Максимальный размер загружаемого файла в байтах
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10 MB
+
+# Максимальный размер загружаемого файла для изображений (например, 10 MB)
+FILE_UPLOAD_MAX_MEMORY_SIZE = 10485760  # 10 MB
+
 
 # Application definition
 
