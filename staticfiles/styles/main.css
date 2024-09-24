@@ -350,7 +350,7 @@ a {
 }
 
 .product-modal__content img {
-  width: auto;
+  width: 100%;
 }
 
 .modal__info {
