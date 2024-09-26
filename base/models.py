@@ -31,6 +31,7 @@ class Company(models.Model):
     whatsapp_link = models.URLField(blank=True, null=True, help_text="ссылка на контакт в ватсапп", default="")
     address = models.CharField(max_length=255, help_text="адрес компании", default="Адрес компании")
     about = models.TextField(help_text="О компании текст", default="О компании")
+    about_lv = models.TextField(help_text="О компании текст на латышском", default="Par kompaniju")
     
     # Изменение поля для изображения
     location_image = models.ImageField(upload_to='images/', blank=True, null=True, help_text="картинка города (где базируется компания)", default='images/jurmala.jpg')
