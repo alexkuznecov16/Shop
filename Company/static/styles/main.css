@@ -296,16 +296,17 @@ a {
 
 .product-item .discount {
   position: absolute;
-  left: -20px;
-  top: -20px;
+  left: -40px;
+  top: -30px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  border-radius: 20px;
+  border-radius: 34px;
   background-color: yellow;
   color: #000;
   font-size: clamp(10px, 4vw, 20px);
+  padding: 10px;
 }
 
 .initialPrice {
