@@ -30,7 +30,14 @@
 
     <div class="location-info">
         <h2>{% trans "О нас" %}</h2>
-        <p>{% trans company_info.about %}</p>
+        <p>
+            {% trans company_info.about %}
+            {% if LANGUAGE_CODE == 'lv' %}
+            {{ company_info.about_lv }}
+            {% else %}
+                {{ company_info.about }}
+            {% endif %}
+        </p>
         <p><strong>{% trans "Адрес:" %}</strong>
             <span>Jurmala, Latvija</span>
         </p>

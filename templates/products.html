@@ -9,37 +9,61 @@
     <h2 class="section-title">{% trans "Наши товары" %}</h2>
     <div class="products__inner">
       {% for product in products %}
-          <div title="{{ product.name }}" class="product-item" onclick="openModal({{ product.id }})">
-              <h3>{{ product.name|truncatechars:30 }}</h3>
-              {% if product.image %}
-                  <img src="{{ product.image.url }}" alt="{{ product.name }}">
+      <div title="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}" class="product-item" onclick="openModal({{ product.id }})">
+          <h3>
+              {% if LANGUAGE_CODE == 'lv' %}
+                  {{ product.name_lv|truncatechars:30 }}
               {% else %}
-                  <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
+                  {{ product.name|truncatechars:30 }}
               {% endif %}
-              <div class="discount">-{{ product.discount }}%</div>
-              <p>{{ product.description|truncatechars:100 }}</p>
-              <p class="initialPrice">{{ product.startPrice }} &euro;</p>
-              <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
-          </div>
-          <div id="modal-{{ product.id }}" class="product-modal closed">
-            <div class="container">
+          </h3>
+          {% if product.image %}
+              <img src="{{ product.image.url }}" alt="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}">
+          {% else %}
+              <img src="{% static 'images/default.jpg' %}" alt="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}">
+          {% endif %}
+          <div class="discount">-{{ product.discount }}%</div>
+          <p>
+              {% if LANGUAGE_CODE == 'lv' %}
+                  {{ product.description_lv|truncatechars:100 }}
+              {% else %}
+                  {{ product.description|truncatechars:100 }}
+              {% endif %}
+          </p>
+          <p class="initialPrice">{{ product.startPrice }} &euro;</p>
+          <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
+      </div>
+      <div id="modal-{{ product.id }}" class="product-modal closed">
+          <div class="container">
               <div class="product-modal__content">
-                <i class="bi bi-x-lg close" onclick="closeModal({{ product.id }})"></i>
+                  <i class="bi bi-x-lg close" onclick="closeModal({{ product.id }})"></i>
                   {% if product.image %}
-                      <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                      <img src="{{ product.image.url }}" alt="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}">
                   {% else %}
-                      <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
+                      <img src="{% static 'images/default.jpg' %}" alt="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}">
                   {% endif %}
                   <div class="modal__info">
-                    <h3>{{ product.name }}</h3>
-                    <p>{{ product.description }}</p>
-                    <p class="initialPrice">{{ product.startPrice }} &euro;</p>
-                    <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
+                      <h3>
+                          {% if LANGUAGE_CODE == 'lv' %}
+                              {{ product.name_lv }}
+                          {% else %}
+                              {{ product.name }}
+                          {% endif %}
+                      </h3>
+                      <p>
+                          {% if LANGUAGE_CODE == 'lv' %}
+                              {{ product.description_lv }}
+                          {% else %}
+                              {{ product.description }}
+                          {% endif %}
+                      </p>
+                      <p class="initialPrice">{{ product.startPrice }} &euro;</p>
+                      <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
                   </div>
               </div>
-            </div>
           </div>
-      {% endfor %}
+      </div>
+  {% endfor %}
     </div>
   </div>
 </div>
