@@ -2,8 +2,10 @@ from django.db import models
 
 class Product(models.Model):
     name = models.CharField(max_length=255, verbose_name=("Наименование товара"), default='Наименование по умолчанию')
+    name_lv = models.CharField(max_length=255, verbose_name=("Наименование товара на латышском"), default='Standarts nosaukums')
     
     description = models.TextField(verbose_name=("Описание товара"), default='Описание по умолчанию')
+    description_lv = models.TextField(verbose_name=("Описание товара на латышском"), default='Standarts teksts')
     
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=("Стоимость товара в евро"))
     startPrice = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Начальная стоимость товара", default=0.00)
