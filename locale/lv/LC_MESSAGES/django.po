@@ -20,7 +20,7 @@ msgstr ""
 "2);\n"
 #: .\Company\settings.py:122
 msgid "Russian"
-msgstr "Krievu"
+msgstr "Русский"
 
 #: .\Company\settings.py:123
 msgid "Latvian"
