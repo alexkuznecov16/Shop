@@ -7,8 +7,8 @@
   <div class="container">
     <div class="error">
       <img src="{% static 'images/error.jpg' %}" alt="error">
-      <h1 class="error-title">Страница не найдена</h1>
-      <p>К сожалению, запрашиваемая страница не существует. Вы можете вернуться на <a href="{% url 'home' %}" style="color: red;">главную</a>.</p>
+      <h1 class="error-title">{% trans "Страница не найдена." %}</h1>
+      <p>{% trans "К сожалению, запрашиваемая страница не существует. Вы можете вернуться на" %} <a href="{% url 'home' %}" style="color: red;">{% trans "главную" %}</a>.</p>
     </div>
   </div>
 </div>

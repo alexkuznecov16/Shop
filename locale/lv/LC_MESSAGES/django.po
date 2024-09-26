@@ -101,6 +101,15 @@ msgstr "Laipni lūdzam!"
 msgid "На нашем сайте вы можете ознакомиться с продукцией, которую мы продаем."
 msgstr "Mūsu vietnē jūs varat iepazīties ar mūsu piedāvātajiem produktiem."
 
+msgid "Страница не найдена."
+msgstr "Lapa nav atrasta."
+
+msgid "К сожалению, запрашиваемая страница не существует. Вы можете вернуться на"
+msgstr "Diemžēl pieprasītā lapa neeksistē. Jūs varat atgriezties"
+
+msgid "главную"
+msgstr "galvenajā lapā"
+
 #: .\templates\home.html:11
 msgid "Связаться"
 msgstr "Sazināties"
