@@ -6,6 +6,8 @@ class Product(models.Model):
     description = models.TextField(verbose_name=("Описание товара"), default='Описание по умолчанию')
     
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=("Стоимость товара в евро"))
+    startPrice = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Начальная стоимость товара", default=0.00)
+    discount = models.DecimalField(max_digits=5, decimal_places=2, verbose_name="Скидка в процентах", default=0.00)
     available = models.BooleanField(default=True, verbose_name=("Доступность товара"))
     
     image = models.ImageField(upload_to='images/', verbose_name=("Изображение товара"), null=True, blank=True)

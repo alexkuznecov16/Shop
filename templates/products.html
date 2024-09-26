@@ -16,8 +16,10 @@
               {% else %}
                   <img src="{% static 'images/default.jpg' %}" alt="{{ product.name }}">
               {% endif %}
+              <div class="discount">-{{ product.discount }}%</div>
               <p>{{ product.description|truncatechars:100 }}</p>
-              <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} {% trans "евро" %}</p>
+              <p class="initialPrice">{{ product.startPrice }} &euro;</p>
+              <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
           </div>
           <div id="modal-{{ product.id }}" class="product-modal closed">
             <div class="container">
@@ -31,7 +33,8 @@
                   <div class="modal__info">
                     <h3>{{ product.name }}</h3>
                     <p>{{ product.description }}</p>
-                    <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} {% trans "евро" %}</p>
+                    <p class="initialPrice">{{ product.startPrice }} &euro;</p>
+                    <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
                   </div>
               </div>
             </div>
