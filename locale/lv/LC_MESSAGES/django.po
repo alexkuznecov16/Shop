@@ -79,7 +79,7 @@ msgstr "Sākums"
 
 #: .\templates\header.html:11 .\templates\header.html:28
 msgid "Товары"
-msgstr "Produkti"
+msgstr "Preces"
 
 #: .\templates\header.html:12 .\templates\header.html:29
 msgid "Контакты"
@@ -99,7 +99,7 @@ msgstr "Laipni lūdzam!"
 
 #: .\templates\home.html:10
 msgid "На нашем сайте вы можете ознакомиться с продукцией, которую мы продаем."
-msgstr "Mūsu vietnē jūs varat iepazīties ar mūsu piedāvātajiem produktiem."
+msgstr "Mūsu vietnē jūs varat iepazīties ar mūsu piedāvātajiem precem."
 
 msgid "Страница не найдена."
 msgstr "Lapa nav atrasta."
@@ -116,7 +116,7 @@ msgstr "Sazināties"
 
 #: .\templates\home.html:18 .\templates\products.html:9
 msgid "Наши товары"
-msgstr "Mūsu produkti"
+msgstr "Mūsu preces"
 
 #: .\templates\home.html:31
 msgid "Цена"
