@@ -346,8 +346,9 @@ a {
 
 .product-item img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   margin-bottom: 10px;
+  object-fit: contain;
 }
 
 .product-item h3 {
