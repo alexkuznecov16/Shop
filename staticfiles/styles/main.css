@@ -311,14 +311,28 @@ a {
 }
 
 .product-item.sold::after {
-  content: "";
+  content: "Sold Out"; /* Показываем текст "Sold Out" */
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
-  background-color: rgb(255, 0, 0, .7);
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.product-item.sold {
+  position: relative;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .initialPrice {
