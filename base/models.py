@@ -14,7 +14,7 @@ class Product(models.Model):
     def discount(self):
         if self.startPrice > 0 and self.startPrice > self.price:
             discount = ((self.startPrice - self.price) / self.startPrice) * 100
-            return round(discount, 2)
+            return int(round(discount))  # Convert to integer after rounding
         return 0
     
     available = models.BooleanField(default=True, verbose_name=("Доступность товара"))
