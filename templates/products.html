@@ -9,7 +9,7 @@
     <h2 class="section-title">{% trans "Наши товары" %}</h2>
     <div class="products__inner">
       {% for product in products %}
-      <div title="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}" class="product-item" onclick="openModal({{ product.id }})">
+      <div title="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}" class="product-item {% if not product.available %}sold{% endif %}" onclick="openModal({{ product.id }})">
           <h3>
               {% if LANGUAGE_CODE == 'lv' %}
                   {{ product.name_lv|truncatechars:30 }}
