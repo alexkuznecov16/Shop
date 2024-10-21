@@ -589,13 +589,6 @@ a {
 }
 
 /*! CONTACTS BLOCK END */
-
-@media screen and (max-width: 1200px) {
-  .product-modal__content {
-    max-height: 450px;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .mobileMenuOpener {
     display: block;
