@@ -53,9 +53,9 @@
                     </h3>
                     <p>
                         {% if LANGUAGE_CODE == 'lv' %}
-                            {{ product.description_lv }}
+                            {{ product.description_lv|linebreaksbr }}
                         {% else %}
-                            {{ product.description }}
+                            {{ product.description|linebreaksbr }}
                         {% endif %}
                     </p>
                     <p class="initialPrice">{{ product.startPrice }} &euro;</p>
