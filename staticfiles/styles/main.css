@@ -390,6 +390,7 @@ a {
 }
 
 .product-modal__content {
+  overflow-y: scroll;
   position: relative;
   width: 90%;
   height: 500px;
