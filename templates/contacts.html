@@ -32,9 +32,9 @@
         <h2>{% trans "О нас" %}</h2>
         <p>
             {% if LANGUAGE_CODE == 'lv' %}
-            {{ company_info.about_lv }}
+            {{ company_info.about_lv|linebreaksbr }}
             {% else %}
-                {{ company_info.about }}
+                {{ company_info.about|linebreaksbr }}
             {% endif %}
         </p>
         <p><strong>{% trans "Адрес:" %}</strong>
