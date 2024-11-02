@@ -7,6 +7,15 @@
 <div class="products main-content">
   <div class="container">
     <h2 class="section-title">{% trans "Наши товары" %}</h2>
+    <div class="sorting">
+      <label for="sort-options">{% trans "Сортировка по:" %}</label>
+      <select id="sort-options" onchange="sortProducts(this.value)">
+          <option value="default" {% if sort_option == 'default' %}selected{% endif %}> {% trans "По умолчанию" %}</option>
+          <option value="price_asc" {% if sort_option == 'price_asc' %}selected{% endif %}> {% trans "Цена по возрастанию" %}</option>
+          <option value="price_desc" {% if sort_option == 'price_desc' %}selected{% endif %}> {% trans "Цена по убыванию" %}</option>
+          <option value="offer" {% if sort_option == 'offer' %}selected{% endif %}> {% trans "Сначала с предложением" %}</option>
+      </select>
+    </div>
     <div class="products__inner">
       {% for product in products %}
       <div title="{% if LANGUAGE_CODE == 'lv' %}{{ product.name_lv }}{% else %}{{ product.name }}{% endif %}" class="product-item {% if product.offer %}special{% endif %} {% if not product.available %}sold{% endif %}" onclick="openModal({{ product.id }})">
@@ -81,6 +90,10 @@
     let modal = document.getElementById('modal-' + productId);
     modal.classList.add('closed');
     document.body.style.overflow = '';
+  }
+
+  function sortProducts(sortOption) {
+    window.location.href = '?sort=' + sortOption;
   }
 
   window.onload = function() {

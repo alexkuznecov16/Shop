@@ -142,6 +142,21 @@ msgstr "Cena:"
 msgid "Доступность:"
 msgstr "Pieejamība:"
 
+msgid "Сортировка по:"
+msgstr "Atlasīt pēc:"
+
+msgid "По умолчанию"
+msgstr "Noklusējuma"
+
+msgid "Цена по возрастанию"
+msgstr "Cena augošā secībā"
+
+msgid "Цена по убыванию"
+msgstr "Cena dilstošā secībā"
+
+msgid "Сначала с предложением"
+msgstr "Vispirms ar ieteikumu"
+
 #: .\templates\contacts.html:33
 msgid "Мы специализируемся на продаже и перепродаже товаров по сниженным ценам, предлагая широкий ассортимент продукции по доступной стоимости. Наша миссия — сделать качественные товары доступными для всех, экономя ваше время и деньги. Благодаря прямым поставкам и выгодным условиям сотрудничества с нашими партнерами, мы обеспечиваем лучшие предложения на рынке. С нами вы можете купить нужные товары по выгодной цене, не переплачивая за бренд или посредников."
 msgstr "Mēs specializējamies preču pārdošanā un tālākpārdošanā par pazeminātām cenām, piedāvājot plašu produktu klāstu par pieņemamām cenām. Mūsu misija ir padarīt kvalitatīvas preces pieejamas ikvienam, ietaupot jūsu laiku un naudu. Pateicoties tiešajiem piegādēm un izdevīgiem sadarbības nosacījumiem ar mūsu partneriem, mēs nodrošinām labākos piedāvājumus tirgū. Pie mums jūs varat iegādāties nepieciešamās preces par izdevīgu cenu, nepārmaksājot par zīmolu vai starpniekiem."

@@ -262,6 +262,38 @@ a {
   text-align: center;
 }
 
+/** SORTING =======================*/
+
+.sorting {
+  margin-bottom: 50px;
+}
+
+.sorting label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.sorting select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.sorting select:hover {
+  border-color: #aaa;
+}
+
+.sorting select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/** SORTING ====================================*/
+
 .products__inner {
   position: relative;
   width: 100%;
