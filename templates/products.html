@@ -34,7 +34,7 @@
           <p><strong>{% trans "Цена:" %}</strong> {{ product.price }} &euro;</p>
       </div>
       {% if product.available %}
-      <div id="modal-{{ product.id }}" class="product-modal closed">
+      <div id="modal-{{ product.id }}" class="product-modal closed {% if product.offer %}special{% endif %}">
         <div class="container">
             <div class="product-modal__content">
                 <i class="bi bi-x-lg close" onclick="closeModal({{ product.id }})"></i>

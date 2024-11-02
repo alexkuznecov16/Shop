@@ -19,6 +19,8 @@ class Product(models.Model):
     
     available = models.BooleanField(default=True, verbose_name=("Доступность товара"))
     
+    offer = models.BooleanField(default=False, verbose_name="Спец. предложение?")
+    
     image = models.ImageField(upload_to='images/', verbose_name=("Изображение товара"), null=True, blank=True)
 
     def __str__(self) -> str:
