@@ -4,6 +4,8 @@ from django.utils.translation import gettext as _
 from .models import Product, Company
 from django.db.models import Case, When
 
+from base import models
+
 def home(request):
     products = get_translated_products()  # Получаем переведенные продукты для главной страницы
     company_info = get_company_info()
